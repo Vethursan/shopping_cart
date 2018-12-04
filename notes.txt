@@ -1,7 +1,17 @@
-this
+*this*
 - in js 'this' refers to the object it was called upon
 - if you call obj.someMethod, this refers to obj
 - if you call someMethod, this will be null
 - you can force a specific value for this by calling bind(), call() apply()
 - or if the function is an arrow => function, this is hardcoded to refer to the location the function was defined. 
 - Note: 2 same functions arent equal
+
+*Spread operator*
+
+var props = {};
+props.foo = x;
+props.bar = y;
+var component = <Component {...props} />;
+
+Same as 
+var component = <Component foo={props.foo} bar={props.bar} />;
